@@ -1,0 +1,199 @@
+ h1{
+     color:fuchsia;
+     /*  web browsers might not support some font family,so we do well to show atleast two*/
+     font-family:"Dancing Script", cursive ,"Playwrite CU Guides", cursive ,"Pacifico",cursive;
+     border-top-style:dotted; 
+     border-right-style:solid;
+     border-left-style:groove;
+     border-bottom-style:dashed;
+     border-left:50px;
+     }
+.intermediate{
+            color:red;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+               font-style:italic;
+                text-decoration: solid underlined;
+                border-style:ridge;
+        }
+  #Advanced{
+        color:green;
+        font-family:"Pacifico",cursive;
+        font-style:italic;
+         text-decoration: dashed underline ;
+         border-style:inset;
+         border-width:12px;
+         border-color:gold;
+         padding:20px;  
+         background:linear-gradient(to left,skyblue,rgb(122, 55, 55));
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+
+      }
+
+  p{
+        color:blanchedalmond;
+        font-family:"Playwrite CU Guides", cursive;
+        font-style:oblique;
+        font-weight: 100;
+       text-decoration : dotted underline;
+       border-style:double;
+       border-width:5px;    /*Always add the unit, pixel to the dimensio.If not it won't take effect*/
+       /*The border can have alot of varieties like color, radius,width, and the style*/
+       border-radius:10px; /*The higher the radius, the rounder the border becomes*/
+       padding:20px;
+        background:linear-gradient(to right,skyblue,brown);
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+
+      }
+
+body{
+    /*background-color:black;      **When one wants to work with the color property*/
+    /*background:linear-gradient(skyblue,hotpink);
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+   /* background-image: url("../../Images/image.png");*/
+       background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size:cover;
+      background-position:center;
+      margin-top:20px;
+      margin-left:20px;
+      margin-right:20px;
+/*With the margin top,right,booton,and left have the same px, then we can say margin for simplicity and equate it to the pixel's dimension*/
+/*When margin left and margin right are set to auto,they are meged at the center.
+and incase we set the unit to auto instead of pixel*/
+
+
+
+
+}
+
+.intermediates{
+      background:linear-gradient(skyblue,white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+            color:bisque;
+            font-family:sans-serif;
+               font-style:italic;
+               text-decoration:wavy underline;
+               border-style:groove;
+               border-width:10px;
+               border-radius:50px;
+                background:linear-gradient(to left,skyblue,hotpink);
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+        }
+
+        .BOX_1{
+            width:50px;
+            height:5px;
+            border:2px solid;
+            color:greenyellow;
+         padding-left:3px;
+         
+            float:left;
+}
+.ed{
+             clear:left;      
+              background-color: yellow;  
+            padding: 10px;
+            }
+            /*The clear float stops the floating of the image on both the left side andthe right side
+            Also when we talk about floatin weare dealing with the movement of the image*/
+
+
+            /*CSS POSITIONING***8******/
+
+
+/*PSEUDO-CLASS:It is a keyword added to a selector that specifies
+the special state of the selector, so in here the selector is
+ the button ,link and the keywords are the hover, active, visited.
+ it makes the selector act so special due to it different styles of working.
+ */
+a:link{
+      color:goldenrod;
+}
+a:visited{
+      color:bisque;
+}
+a:hover{
+      color:brown;
+
+}
+a:active{
+      color:black;
+}
+botton:hover{
+      background-color:blanchedalmond;
+}
+botton:active{
+      color:aquamarine;
+}
+botton:visited{
+      color:red;
+}
+
+
+/*The nthchild of the pseudo-class*/
+
+/*li:nth-child(3){
+      background-color:blue;
+} */
+     
+
+
+/*Applying the nth-child on the even values
+li:nth-child(even){
+      background-color:palegreen;
+}*/
+        
+/*Applying the nth-child on the odd values
+li:nth-child(odd){
+      background-color:blueviolet;
+}*/
+
+/*Incase we want to highlight the multiples of the element, we can you use the nth-child*/
+li:nth-child(3n){
+      background-color:aquamarine;
+}
+/*So with this, we can actually pass a formular to the nth term for 
+the values to be highlighted*/
+li:nth-child(2n){
+      background-color:greenyellow;
+}
+
+/******************Shadow******************/
+/*Text-shadow*/
+ /* The first one is for the x axis, the second for y and the third for wide spread*/
+ /*With the box shadow, the entire element is going to have shadow, we can do well to hover it 
+ by using the pseudo-class*/
+h1{
+      text-shadow:0px -8px 10px gold, 0px -5px 5px fuchsia ;
+
+      }
+
+h1:hover{
+box-shadow: 2px 8px 32px fuchsia;
+}
+      
+
+/*Cute website called___FONT AWESOME___.It helps one to be able to access the icons on it*/
+
+
+
+.translate{
+      border:10px solid;
+      width: 70px;
+      height:50px;
+      font-size:50px;
+      background-color:blue;
+      font-family:Arial, Helvetica, sans-serif;
+      transform: translateX(50px);  /*Translate on the right by 50px*/
+      transform: translateX();
+      transform: translateX();
+      transform: translateX();
+      transform: translateX();
+      transform: translateX();
+
+}
