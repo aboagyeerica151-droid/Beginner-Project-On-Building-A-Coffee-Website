@@ -1,0 +1,162 @@
+
+div{
+    /*width and height*/
+    width:100%;
+    max-width:1000px;
+    color:red;
+    background-color:aquamarine;
+    box-sizing:borderss-box;
+    padding:10px 20px;
+                                                        /*Taking in values of whatever pixel for width and height means one is making hardcode values, as a matter of fact we need to make it dynamic, thats both the width and heigh that contains the text, needs to be 
+                                                          dynamic in order to be adapted to the viewport,so we set the width to the above to make it more responsive and nice*/ 
+    /*Font*/
+    font-size:20px;                                 /*How small or big our text will be*/
+    font-family: Arial, Helvetica, sans-serif;      /*Font family can be imported or chosen from the variesties on vs code*/
+    font-weight:bold;                               /*The weight can be set to 600 for boldn or it can be set to light or normal on how one wants the text to be*/
+
+    /*border*/
+  border:10px solid grey;                       /*The border can be simple this way witout making it border style and so on, but we can make everything on one line as easy as this*/
+
+}
+
+                                                    /*SPECIFICITY: The specifity helps to prioritise our selectors, whether generic, class or id.But basically the id is more prioritise, than the class and the generic element*/
+h1{
+    color:greenyellow;
+
+}
+                                                  /*So from this we will realise that even thoght the id is more specific, we can still overwrite it
+                                                     meaning we can make a followup using the same name to overwrite it, but that is one bad practice*/
+#first_id{
+    color:brown;
+}
+#first_id{
+    color:blueviolet;
+}
+
+/*Comparing their specificity*/
+.first_class{
+    color:bisque;
+}
+p.first_class{
+color:forestgreen;
+}
+p{
+    color:blanchedalmond;
+}
+.second_class{
+    color:brown;
+}
+#second_id{
+    color:black;
+}
+
+                                                   /*The !important makes the generic selector more important then  the id and clas no matter how we make them specific*/
+                                                   /*When the elements are not prioritise the generic selector assumes it belongs to them, so those elements becomes generic */
+
+
+/*The Box Model: Help to group our element into four layers, and thats the padding,content,border, margin*/
+h2{
+    color:goldenrod;
+}
+.box{
+    font-size:20px;
+    color:black;
+
+    /*border-style:solid;
+    border-radius:10px;
+     border-color:goldenrod; */
+    border:10px solid goldenrod;
+
+   /* padding-right:10px;
+    padding-left:10px;
+    padding-bottom:10px;
+    padding-top:20px;  */
+    padding:10px 10px 10px 10px;  
+   
+   /* margin-right:10px;
+    margin-left:10px;
+    margin-bottom:10px;
+    margin-top:10px;*/
+    margin:10px 10px 10px 10px;
+   
+    /*Box-sizing*/
+    box-sizing:content-box;   /*This is actually the best to use other than content-box.Even though content box is by default but it amkes the content the value we assigned it to , making the the width of the box very large*/
+
+}
+.Parent{
+    position:relative;
+    height:50vh;
+    width:200px;
+
+}
+.child{
+    position:absolute;
+    height:10vh;
+    width:100%;
+    max-width:40px;
+    bottom:0;
+    left:0;
+    right:10;
+
+}
+
+
+/* Media Queries*/
+
+
+.Media{
+    color:forestgreen;
+}
+
+@media(max-width:900px){
+    h3{
+    font-size:30px;
+    color:lightgreen;
+}
+}
+
+@media(max-width:600px){
+    h3{
+    font-size:20px;
+    color:lightblue;
+}
+.Media{
+    font-size:12px;
+}
+}
+button{
+    transition:  300ms;     /*You can make it specific on which of the properties in the hover element would you like the transition to actually affect directly*/
+}
+
+/*Pseudo Selectors*/
+button:hover{
+    background-color:blueviolet;
+    padding:4px;
+    opacity:70%;                /*opacity deals with how transparent our hovering is gonna look like, 100% mean no transparency*/
+}
+
+/*Pseudo Element*/
+.title::before{
+    color:brown;
+    content:"What is your name";
+    margin: 4px 8px;
+}
+.title::after{
+    color:green;
+    content:"Hey your";
+}
+
+/*Animation*/
+#nimation{
+    animation:pointdown 300ms infinite alternate-reverse;
+    color:blue;
+}
+@keyframes pointdown{
+0%{
+transform: translateX(0px);
+}
+100%{
+transform:translateX(16px);
+}
+
+}
