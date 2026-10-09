@@ -5,7 +5,7 @@ div{
     max-width:1000px;
     color:red;
     background-color:aquamarine;
-    box-sizing:borderss-box;
+    box-sizing:border-box;
     padding:10px 20px;
                                                         /*Taking in values of whatever pixel for width and height means one is making hardcode values, as a matter of fact we need to make it dynamic, thats both the width and heigh that contains the text, needs to be 
                                                           dynamic in order to be adapted to the viewport,so we set the width to the above to make it more responsive and nice*/ 
@@ -71,7 +71,7 @@ h2{
     padding-left:10px;
     padding-bottom:10px;
     padding-top:20px;  */
-    padding:10px 10px 10px 10px;  
+    padding:10px  10px;  
    
    /* margin-right:10px;
     margin-left:10px;
