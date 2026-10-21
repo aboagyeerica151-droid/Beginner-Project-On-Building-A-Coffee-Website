@@ -187,6 +187,7 @@ header h2 {
     font-size: 28px;
     font-family: serif;
     color: white;
+    
 }
 
 ul {
@@ -740,17 +741,20 @@ position:relative;
     padding: 0 !important;
 }
 .lastone{
-    height:90vh;
+    height:100vh;
+    background-color: lightpink;
+    width:100%;
 
 
 
 
 }
 .form{
-    padding-left:900px;
-    border:none;
-    margin-top:350px;
-     margin-right:1200px;
+   padding-left:740px;
+   margin-top:22px;
+     top:240px;
+     bottom:80px;
+     position:absolute;
     
 
 }
@@ -769,24 +773,47 @@ input{
 }
 #email{
      height:30px;
-    width:300px;
+    width:460px;
     margin-top:14px;
+     padding-left:10px;
+
 }
 
 #name{
     height:30px;
-    width:300px;
+    width:460px;
+    padding-left:10px;
+  
+
     
 
 }
 
 .contact-info{
-    margin-top:-300px;
+    margin-top:310px;
+    gap:5px;
 }
 
 .btnnn{
-    width:100px;
-    height:auto;
+    width:120px;
+    height:44px;
+    margin-top: 15px;
+    border:none;
+    border-radius:20px;
+    padding-left:4px;
+    font-weight:bold;
+    color:#ffffff;
+    background-color: #351919;
+    border:none;
+
+
+}
+.btnnn:hover{
+     background-color:lightpink;
+}
+
+.lastone{
+    position:relative;
 
 }
 
@@ -796,5 +823,14 @@ input{
     text-decoration-line: underline ;
     text-underline-offset:15px;
     text-decoration-color:orange;
-   
+    top:60px;
+   position:absolute;
+}
+
+#textarea{
+    margin-top:30px;
+}
+
+.contact-info p {
+    margin-bottom: 12px;
 }
